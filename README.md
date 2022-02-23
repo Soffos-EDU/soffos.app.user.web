@@ -1,1 +1,3 @@
-# soffos.app.user.web
+# `soffos.app.user.web`
+
+Package containing user components
