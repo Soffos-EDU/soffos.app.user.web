@@ -5,18 +5,18 @@ import {
   FormControl,
   FormErrorMessage,
   FormLabel,
-  IconButton,
+  // IconButton,
   Input,
   InputGroup,
-  InputRightElement,
+  // InputRightElement,
   VStack,
   Button,
   HStack,
   Checkbox,
   Link,
   Text,
-  ViewIcon,
-  ViewOffIcon,
+  // ViewIcon,
+  // ViewOffIcon,
   isEmailValid,
   isPasswordValid,
 } from '@soffos/ui';
@@ -257,7 +257,7 @@ const SignUp = ({ onSignUp, isLoading, submitErrors, showLabelInput }) => {
               />
             )}
           />
-          <InputRightElement>
+          {/* <InputRightElement>
             <IconButton
               variant="unstyled"
               onClick={() => {
@@ -265,7 +265,7 @@ const SignUp = ({ onSignUp, isLoading, submitErrors, showLabelInput }) => {
               }}
               icon={isPassVisible ? <ViewIcon /> : <ViewOffIcon />}
             />
-          </InputRightElement>
+          </InputRightElement> */}
         </InputGroup>
         <FormErrorMessage>{formErrors?.password?.message}</FormErrorMessage>
       </FormControl>

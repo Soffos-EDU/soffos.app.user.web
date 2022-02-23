@@ -4,15 +4,15 @@ import {
   FormControl,
   FormErrorMessage,
   FormLabel,
-  IconButton,
+  // IconButton,
   Input,
   InputGroup,
-  InputRightElement,
+  // InputRightElement,
   VStack,
   Button,
   HStack,
-  ViewIcon,
-  ViewOffIcon,
+  // ViewIcon,
+  // ViewOffIcon,
   isPasswordValid,
 } from '@soffos/ui';
 
@@ -80,7 +80,7 @@ const ResetNewPassword = ({
               />
             )}
           />
-          <InputRightElement>
+          {/* <InputRightElement>
             <IconButton
               variant="unstyled"
               onClick={() => {
@@ -88,7 +88,7 @@ const ResetNewPassword = ({
               }}
               icon={isPassVisible ? <ViewIcon /> : <ViewOffIcon />}
             />
-          </InputRightElement>
+          </InputRightElement> */}
         </InputGroup>
         <FormErrorMessage>{formErrors?.password?.message}</FormErrorMessage>
       </FormControl>
