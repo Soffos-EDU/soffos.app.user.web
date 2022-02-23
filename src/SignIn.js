@@ -4,15 +4,15 @@ import {
   FormControl,
   FormErrorMessage,
   FormLabel,
-  // IconButton,
+  IconButton,
   Input,
   InputGroup,
-  // InputRightElement,
+  InputRightElement,
   VStack,
   Button,
   HStack,
-  // ViewIcon,
-  // ViewOffIcon,
+  ViewIcon,
+  ViewOffIcon,
   isEmailValid,
 } from '@soffos/ui';
 
@@ -90,7 +90,7 @@ const SignIn = ({ onSignIn, isLoading, submitErrors, showLabelInput }) => {
               />
             )}
           />
-          {/* <InputRightElement>
+          <InputRightElement>
             <IconButton
               variant="unstyled"
               onClick={() => {
@@ -98,7 +98,7 @@ const SignIn = ({ onSignIn, isLoading, submitErrors, showLabelInput }) => {
               }}
               icon={isPassVisible ? <ViewIcon /> : <ViewOffIcon />}
             />
-          </InputRightElement> */}
+          </InputRightElement>
         </InputGroup>
         <FormErrorMessage>{formErrors?.password?.message}</FormErrorMessage>
       </FormControl>
