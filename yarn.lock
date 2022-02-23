@@ -2192,9 +2192,9 @@
     prop-types "^15.7.2"
     tslib "^2.1.0"
 
-"@soffos/ui@https://github.com/Soffos-EDU/soffos.web.package":
+"@soffos/core@https://github.com/Soffos-EDU/soffos.app.core.web":
   version "0.0.0"
-  resolved "https://github.com/Soffos-EDU/soffos.web.package#4050bbd9233958d8b2331a138485eb53b2ee939c"
+  resolved "https://github.com/Soffos-EDU/soffos.app.core.web#bd197bc638f26312b3f25f71e3526eea0ff51df0"
   dependencies:
     "@chakra-ui/icons" "^1.1.1"
     "@chakra-ui/react" "1.8.3"
@@ -2211,6 +2211,7 @@
     qs "6.10.3"
     react "17.0.2"
     react-dom "17.0.2"
+    react-icons "^4.3.1"
 
 "@storybook/addon-actions@6.4.19", "@storybook/addon-actions@^6.4.19":
   version "6.4.19"

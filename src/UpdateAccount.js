@@ -9,7 +9,7 @@ import {
   Button,
   HStack,
   isEmailValid,
-} from '@soffos/ui';
+} from '@soffos/core';
 
 const UpdateAccount = ({
   onUpdateAccount,

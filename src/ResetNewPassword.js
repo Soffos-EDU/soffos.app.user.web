@@ -12,7 +12,7 @@ import {
   Button,
   HStack,
   isPasswordValid,
-} from '@soffos/ui';
+} from '@soffos/core';
 import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
 
 const ResetNewPassword = ({
