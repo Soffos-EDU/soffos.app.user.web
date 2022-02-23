@@ -5,21 +5,20 @@ import {
   FormControl,
   FormErrorMessage,
   FormLabel,
-  // IconButton,
+  IconButton,
   Input,
   InputGroup,
-  // InputRightElement,
+  InputRightElement,
   VStack,
   Button,
   HStack,
   Checkbox,
   Link,
   Text,
-  // ViewIcon,
-  // ViewOffIcon,
   isEmailValid,
   isPasswordValid,
 } from '@soffos/ui';
+import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
 
 const SignUp = ({ onSignUp, isLoading, submitErrors, showLabelInput }) => {
   const [isPassVisible, setIsPassVisible] = useState(false);
@@ -257,15 +256,15 @@ const SignUp = ({ onSignUp, isLoading, submitErrors, showLabelInput }) => {
               />
             )}
           />
-          {/* <InputRightElement>
+          <InputRightElement>
             <IconButton
               variant="unstyled"
               onClick={() => {
                 setIsPassVisible((current) => !current);
               }}
-              icon={isPassVisible ? <ViewIcon /> : <ViewOffIcon />}
+              icon={isPassVisible ? <AiFillEye /> : <AiFillEyeInvisible />}
             />
-          </InputRightElement> */}
+          </InputRightElement>
         </InputGroup>
         <FormErrorMessage>{formErrors?.password?.message}</FormErrorMessage>
       </FormControl>
