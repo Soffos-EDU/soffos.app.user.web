@@ -11,10 +11,9 @@ import {
   VStack,
   Button,
   HStack,
-  // ViewIcon,
-  // ViewOffIcon,
   isEmailValid,
 } from '@soffos/ui';
+import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
 
 const SignIn = ({ onSignIn, isLoading, submitErrors, showLabelInput }) => {
   const [isPassVisible, setIsPassVisible] = useState(false);
@@ -90,15 +89,15 @@ const SignIn = ({ onSignIn, isLoading, submitErrors, showLabelInput }) => {
               />
             )}
           />
-          {/* <InputRightElement>
+          <InputRightElement>
             <IconButton
               variant="unstyled"
               onClick={() => {
                 setIsPassVisible((current) => !current);
               }}
-              icon={isPassVisible ? <ViewIcon /> : <ViewOffIcon />}
+              icon={isPassVisible ? <AiFillEye /> : <AiFillEyeInvisible />}
             />
-          </InputRightElement> */}
+          </InputRightElement>
         </InputGroup>
         <FormErrorMessage>{formErrors?.password?.message}</FormErrorMessage>
       </FormControl>
