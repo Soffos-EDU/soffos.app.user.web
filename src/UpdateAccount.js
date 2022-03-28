@@ -11,6 +11,18 @@ import {
   isEmailValid,
 } from '@soffos/core';
 
+const inputReadOnlyStyles = {
+  border: 'none',
+  background: 'transparent',
+  _hover: {
+    background: 'transparent',
+  },
+  _focus: {
+    background: 'transparent',
+  },
+  fontWeight: 'bold',
+};
+
 const UpdateAccount = ({
   onUpdateAccount,
   isLoading,
@@ -40,6 +52,34 @@ const UpdateAccount = ({
       noValidate
       ref={formRef}
     >
+      <FormControl
+        id="account-email"
+        isRequired
+        isInvalid={!!formErrors.email}
+        isReadOnly
+      >
+        {showLabelInput && <FormLabel>Email</FormLabel>}
+        <Controller
+          control={control}
+          autoComplete="email"
+          rules={{
+            required: 'This field is required',
+            validate: (value) => isEmailValid(value) || 'Enter valid email',
+          }}
+          type="email"
+          name="email"
+          defaultValue={userInfo.email}
+          render={({ field }) => (
+            <Input
+              {...field}
+              variant="filled"
+              placeholder="Email"
+              {...inputReadOnlyStyles}
+            />
+          )}
+        />
+        <FormErrorMessage>{formErrors?.email?.message}</FormErrorMessage>
+      </FormControl>
       <FormControl
         id="account-firstName"
         isRequired
@@ -84,30 +124,6 @@ const UpdateAccount = ({
         />
         <FormErrorMessage>{formErrors?.last_name?.message}</FormErrorMessage>
       </FormControl>
-      <FormControl
-        id="account-email"
-        isRequired
-        isInvalid={!!formErrors.email}
-        isReadOnly
-      >
-        {showLabelInput && <FormLabel>Email</FormLabel>}
-        <Controller
-          control={control}
-          autoComplete="email"
-          rules={{
-            required: 'This field is required',
-            validate: (value) => isEmailValid(value) || 'Enter valid email',
-          }}
-          type="email"
-          name="email"
-          defaultValue={userInfo.email}
-          render={({ field }) => (
-            <Input {...field} variant="filled" placeholder="Email" />
-          )}
-        />
-        <FormErrorMessage>{formErrors?.email?.message}</FormErrorMessage>
-      </FormControl>
-
       {submitErrors && (
         <FormControl isInvalid={submitErrors}>
           <FormErrorMessage>{submitErrors}</FormErrorMessage>
