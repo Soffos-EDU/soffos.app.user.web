@@ -17,21 +17,21 @@
   },
   "dependencies": {
     "@soffos/core": "https://github.com/Soffos-EDU/soffos.app.core.web",
-    "react": "18.0.0",
-    "react-dom": "18.0.0",
-    "react-hook-form": "^7.29.0",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-hook-form": "^7.30.0",
     "react-icons": "^4.3.1",
     "react-input-mask": "^2.0.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.8",
-    "@storybook/addon-actions": "^6.4.19",
-    "@storybook/addon-essentials": "^6.4.19",
-    "@storybook/addon-interactions": "^6.4.19",
-    "@storybook/addon-links": "^6.4.19",
-    "@storybook/react": "^6.4.19",
-    "@storybook/testing-library": "^0.0.9",
-    "babel-loader": "^8.2.4"
+    "@babel/core": "^7.17.10",
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-interactions": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/react": "^6.4.22",
+    "@storybook/testing-library": "^0.0.11",
+    "babel-loader": "^8.2.5"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
