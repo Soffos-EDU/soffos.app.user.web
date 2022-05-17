@@ -19,12 +19,12 @@
     "@soffos/core": "https://github.com/Soffos-EDU/soffos.app.core.web",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "react-hook-form": "^7.30.0",
+    "react-hook-form": "^7.31.1",
     "react-icons": "^4.3.1",
     "react-input-mask": "^2.0.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.10",
+    "@babel/core": "^7.17.12",
     "@storybook/addon-actions": "^6.4.22",
     "@storybook/addon-essentials": "^6.4.22",
     "@storybook/addon-interactions": "^6.4.22",
